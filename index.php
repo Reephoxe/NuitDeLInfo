@@ -16,7 +16,7 @@
                 <li><a href="index.php" data-text="Accueil">Accueil</a></li>
                 <li><a href="#" data-text="propos">A propos de nous</a></li>
                 <li><a href="#" data-text="Services">Les services</a></li>
-                <li><a href="connexion.php" data-text="connection">connexion</a></li>
+                <li><a href="connexion.php" data-text="connexion">connexion</a></li>
 
             </ul>
         </section>
