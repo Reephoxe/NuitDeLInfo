@@ -5,6 +5,41 @@
     font-family:cursive;
 
 }
+#connecter{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    
+}
+@keyframes wheelHueColor {
+    from, to { color: hsl(324, 70%, 45%); }
+    10%      { color: hsl(360, 65%, 45%); }
+    20%      { color: hsl( 36, 80%, 45%); }
+    30%      { color: hsl( 72, 75%, 35%); }
+    40%      { color: hsl(108, 65%, 35%); }
+    50%      { color: hsl(144, 75%, 35%); }
+    60%      { color: hsl(180, 75%, 35%); }
+    70%      { color: hsl(216, 60%, 45%); }
+    80%      { color: hsl(252, 65%, 50%); }
+    90%      { color: hsl(288, 60%, 40%); }
+}
+.text_connect{
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 20s infinite;
+    font-weight: 1000;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 5px 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    
+}
+
+
 section {
     position: relative;
     width: 100%;
