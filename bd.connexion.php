@@ -9,16 +9,14 @@ include_once 'bd.inc.php';
 	*/
 
 	function getLesIdentifiants($id, $mdp){ 
+
 		$monPdo = connexionPDO();
 		$req = $monPdo->prepare ('select motdepasse, identifiant from identifiant');
-		$req->bindValue(':id', $id, PDO::PARAM_STR);
 		$req->execute();
 		$lesInfos = $req->fetchAll(PDO::FETCH_ASSOC);
 		if(!empty($lesInfos)){
 			if ($lesInfos && password_verify($mdp, $lesInfos[0]['motdepasse'])) {
-			$_SESSION['co'] = "true";
 			    ?> <p class="text_connect">Vous êtes bien connecté ✓</p> <?php
-			
 		    }else{
                 header('Location:connexion.php?user='.$id);
             }

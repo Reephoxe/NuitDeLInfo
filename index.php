@@ -43,7 +43,7 @@ switch($action)
     case 'connexion' : // quand le formulaire de connexion est rempli
 	{
 	    $id =$_REQUEST['id']; $mdp = $_REQUEST['mdp']; //on récupère le mdp et l'id
-	    $recupe = getLesIdentifiants($id, $mdp); //on vérifie si on peut retrouver la personne et ainsi se connecter
+	    getLesIdentifiants($id, $mdp); //on vérifie si on peut retrouver la personne et ainsi se connecter
 	    break;
 	}
     case 'inscription':
