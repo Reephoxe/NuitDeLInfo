@@ -6,10 +6,10 @@
  * pour effectuer ensuite des requêtes
 */
 function connexionPDO() {
-    $login = 'wetnnqse_JeanBonds';
+    $login = 'JeanBonds';
     $mdp = 'Jeanbonddu37';
-    $bd = 'wetnnqse_ndli';
-    $serveur = '127.0.0.1';
+    $bd = 'ndli';
+    $serveur = 'localhost';
 
     try {
         $conn = new PDO("mysql:host=$serveur;port=3306;dbname=$bd",$login,$mdp, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\'')); 
